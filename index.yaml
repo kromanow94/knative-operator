@@ -3,15 +3,183 @@ entries:
   knative-operator:
   - apiVersion: v2
     name: knative-operator
+    version: v1.14.6
+    urls:
+    - https://github.com/knative/operator/releases/download/knative-v1.14.6/knative-operator-v1.14.6.tgz
+    created: '2024-07-30T10:23:01Z'
+    digest: 5038d1e799d46c48d72bdad616506cb30191859b0e7c098c56145f2dd10ecd6f
+  - apiVersion: v2
+    name: knative-operator
+    version: v1.15.0
+    urls:
+    - https://github.com/knative/operator/releases/download/knative-v1.15.0/knative-operator-v1.15.0.tgz
+    created: '2024-07-25T10:22:43Z'
+    digest: d45b9e8b1dbd3fee05e107e63193e38bf9c35cfe3e06a8c4006879a4e24c2222
+  - apiVersion: v2
+    name: knative-operator
     version: v1.14.5
     urls:
     - https://github.com/knative/operator/releases/download/knative-v1.14.5/knative-operator-v1.14.5.tgz
-    created: '2024-08-05T09:53:54.786575Z'
+    created: '2024-07-16T10:27:03Z'
     digest: c4a9a93196835574980439f60b25a584dbf22586907c66d2b56200631fd30cd5
   - apiVersion: v2
     name: knative-operator
     version: v1.14.4
     urls:
     - https://github.com/knative/operator/releases/download/knative-v1.14.4/knative-operator-v1.14.4.tgz
-    created: '2024-08-05T09:53:55.647185Z'
+    created: '2024-07-02T10:21:51Z'
     digest: adaa58a39e9a61c8e614af03b1156d10e9dec3a451e41c15faa8e51513b334ab
+  - apiVersion: v2
+    name: knative-operator
+    version: v1.14.3
+    urls:
+    - https://github.com/knative/operator/releases/download/knative-v1.14.3/knative-operator-v1.14.3.tgz
+    created: '2024-06-11T10:17:10Z'
+    digest: f5168081e596bdcb9aadb06ab1ace8fb910306bea516c33374651714fcdd041e
+  - apiVersion: v2
+    name: knative-operator
+    version: v1.14.2
+    urls:
+    - https://github.com/knative/operator/releases/download/knative-v1.14.2/knative-operator-v1.14.2.tgz
+    created: '2024-05-22T02:59:14Z'
+    digest: 0c89939cbaf7b9f47c3fac0318858becc8753d6951168d6f29d986659e968825
+  - apiVersion: v2
+    name: knative-operator
+    version: 1.14.1
+    urls:
+    - https://github.com/knative/operator/releases/download/knative-v1.14.1/knative-operator-1.14.1.tgz
+    created: '2024-05-14T10:21:30Z'
+    digest: 1b00c0062073a5dd926235877f7c0208e9b35651869f09389dc8133b79ab2f99
+  - apiVersion: v2
+    name: knative-operator
+    version: 1.14.0
+    urls:
+    - https://github.com/knative/operator/releases/download/knative-v1.14.0/knative-operator-1.14.0.tgz
+    created: '2024-05-01T10:21:50Z'
+    digest: 4da41db0383199fe71b55a3fc371251229e001d68b7dfb7556f287da2bc30e01
+  - apiVersion: v2
+    name: knative-operator
+    version: 1.13.3
+    urls:
+    - https://github.com/knative/operator/releases/download/knative-v1.13.3/knative-operator-1.13.3.tgz
+    created: '2024-03-19T10:18:17Z'
+    digest: 92aa651967926c6bf869a74649c9178ac99a67596a9a09ba0507b4a27d1b6174
+  - apiVersion: v2
+    name: knative-operator
+    version: 1.12.5
+    urls:
+    - https://github.com/knative/operator/releases/download/knative-v1.12.5/knative-operator-1.12.5.tgz
+    created: '2024-03-19T10:11:05Z'
+    digest: b2db79ad30d2cad7941cf6a284765d7f4e95d2746d5d730516f3fea2156931ef
+  - apiVersion: v2
+    name: knative-operator
+    version: 1.12.4
+    urls:
+    - https://github.com/knative/operator/releases/download/knative-v1.12.4/knative-operator-1.12.4.tgz
+    created: '2024-03-05T10:12:50Z'
+    digest: eb8b4ac59d3e79fc728dabf0a65c500c015437b9a3cea67e23cf16c56d2b76b7
+  - apiVersion: v2
+    name: knative-operator
+    version: 1.13.2
+    urls:
+    - https://github.com/knative/operator/releases/download/knative-v1.13.2/knative-operator-1.13.2.tgz
+    created: '2024-02-27T10:20:01Z'
+    digest: e8f9a30467663e82eb10b495f63501c302fbd1d38821b7e56ea3b040a889634e
+  - apiVersion: v2
+    name: knative-operator
+    version: 1.13.1
+    urls:
+    - https://github.com/knative/operator/releases/download/knative-v1.13.1/knative-operator-1.13.1.tgz
+    created: '2024-02-06T10:17:43Z'
+    digest: 2e0c908d4a8b1ab48c2fdaf197c0eabf6c81904ba2d54639d88a853db5d8ae0a
+  - apiVersion: v2
+    name: knative-operator
+    version: 1.12.3
+    urls:
+    - https://github.com/knative/operator/releases/download/knative-v1.12.3/knative-operator-1.12.3.tgz
+    created: '2024-02-06T10:08:47Z'
+    digest: 4a8a3c1383d371112daf13f9c7e8a41f69eb3e06a207b5f1aef84adc7fe4299a
+  - apiVersion: v2
+    name: knative-operator
+    version: 1.13.0
+    urls:
+    - https://github.com/knative/operator/releases/download/knative-v1.13.0/knative-operator-1.13.0.tgz
+    created: '2024-01-25T01:21:33Z'
+    digest: 49e5af504bcdb78c3a8cf5c96150503d8dc6ab027053a722ee15ebc07ee32c33
+  - apiVersion: v2
+    name: knative-operator
+    version: 1.12.2
+    urls:
+    - https://github.com/knative/operator/releases/download/knative-v1.12.2/knative-operator-1.12.2.tgz
+    created: '2024-01-09T10:09:06Z'
+    digest: 03424319cff9333b40211eed0192dad13af74727aa9d8662a8a26f6b9087a9a6
+  - apiVersion: v2
+    name: knative-operator
+    version: 1.11.12
+    urls:
+    - https://github.com/knative/operator/releases/download/knative-v1.11.12/knative-operator-1.11.12.tgz
+    created: '2023-12-12T10:03:32Z'
+    digest: 8885505152d679b59b6f8cb12d7b319d733d7ccec0d0aa076ef48bcf40aedc99
+  - apiVersion: v2
+    name: knative-operator
+    version: 1.12.1
+    urls:
+    - https://github.com/knative/operator/releases/download/knative-v1.12.1/knative-operator-1.12.1.tgz
+    created: '2023-12-05T10:11:13Z'
+    digest: 1aa6ffb6bfec0676a2c6106feddb51c2bb77c66d8c544bacdfeda9ce4a4645d5
+  - apiVersion: v2
+    name: knative-operator
+    version: 1.11.11
+    urls:
+    - https://github.com/knative/operator/releases/download/knative-v1.11.11/knative-operator-1.11.11.tgz
+    created: '2023-11-30T15:56:00Z'
+    digest: b0a8bca9b2bf198eaad5fde5c5aa0656e2ff75a459e324a4f130f0c464522b5b
+  - apiVersion: v2
+    name: knative-operator
+    version: 1.11.10
+    urls:
+    - https://github.com/knative/operator/releases/download/knative-v1.11.10/knative-operator-1.11.10.tgz
+    created: '2023-10-31T09:58:27Z'
+    digest: 4de5e2dd780d902ae5f9e0391ff2373d758a712fa37233bd8cac484397aaa063
+  - apiVersion: v2
+    name: knative-operator
+    version: 1.12.0
+    urls:
+    - https://github.com/knative/operator/releases/download/knative-v1.12.0/knative-operator-1.12.0.tgz
+    created: '2023-10-27T01:23:09Z'
+    digest: d33a93b2dd0ade2ac70fc08da96e8b60598a584dd5ae2a1dc4acf9f7d04b7f50
+  - apiVersion: v2
+    name: knative-operator
+    version: 1.11.9
+    urls:
+    - https://github.com/knative/operator/releases/download/knative-v1.11.9/knative-operator-1.11.9.tgz
+    created: '2023-10-24T09:57:56Z'
+    digest: 553dd64e8e5e8feea0a7d543f00d25205ce65a8c846618ec02c4cbf740f596dd
+  - apiVersion: v2
+    name: knative-operator
+    version: 1.11.8
+    urls:
+    - https://github.com/knative/operator/releases/download/knative-v1.11.8/knative-operator-1.11.8.tgz
+    created: '2023-10-17T09:57:41Z'
+    digest: 62ab150473602486422e827da8daa90bdd93602c1ec086fccfe63d4ffd77ebd9
+  - apiVersion: v2
+    name: knative-operator
+    version: 1.11.7
+    urls:
+    - https://github.com/knative/operator/releases/download/knative-v1.11.7/knative-operator-1.11.7.tgz
+    created: '2023-10-03T09:55:29Z'
+    digest: 374f6f47d51f50069d5e3561ae7f1076335be5d8c02f5901a8d6aee907062033
+  - apiVersion: v2
+    name: knative-operator
+    version: 1.11.6
+    urls:
+    - https://github.com/knative/operator/releases/download/knative-v1.11.6/knative-operator-1.11.6.tgz
+    created: '2023-09-19T09:57:45Z'
+    digest: 33db13cd0872b3d60c1c949704b2aa9f998868ffa5f81730902b8140a617f6f9
+  - apiVersion: v2
+    name: knative-operator
+    version: 1.11.5
+    urls:
+    - https://github.com/knative/operator/releases/download/knative-v1.11.5/knative-operator-1.11.5.tgz
+    created: '2023-09-05T09:55:21Z'
+    digest: b1446f07d7f9737411720fa01b393fe0c6bc5e6d7270f14fedd08e1c44dc5b51
