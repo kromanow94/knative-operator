@@ -1,0 +1,17 @@
+apiVersion: v1
+entries:
+  knative-operator:
+  - apiVersion: v2
+    name: knative-operator
+    version: v1.14.5
+    urls:
+    - https://github.com/knative/operator/releases/download/knative-v1.14.5/knative-operator-v1.14.5.tgz
+    created: '2024-08-05T09:53:54.786575Z'
+    digest: c4a9a93196835574980439f60b25a584dbf22586907c66d2b56200631fd30cd5
+  - apiVersion: v2
+    name: knative-operator
+    version: v1.14.4
+    urls:
+    - https://github.com/knative/operator/releases/download/knative-v1.14.4/knative-operator-v1.14.4.tgz
+    created: '2024-08-05T09:53:55.647185Z'
+    digest: adaa58a39e9a61c8e614af03b1156d10e9dec3a451e41c15faa8e51513b334ab
