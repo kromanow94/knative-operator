@@ -2,7 +2,9 @@ import yaml
 import requests
 import hashlib
 import re
+import tarfile
 from datetime import datetime
+from io import BytesIO
 
 
 def get_releases(repo, token):
@@ -32,6 +34,25 @@ def find_tgz_assets(releases):
     return tgz_assets
 
 
+def get_chart_details(tgz_content):
+    description = "No description available"
+    app_version = "No app version available"
+    chart_version = "No version available"
+
+    with tarfile.open(fileobj=BytesIO(tgz_content), mode="r:gz") as tar:
+        try:
+            chart_yaml = tar.extractfile("knative-operator/Chart.yaml")
+            if chart_yaml:
+                chart_data = yaml.safe_load(chart_yaml)
+                description = chart_data.get("description", description)
+                chart_version = chart_data.get("version", chart_version)
+                app_version = chart_version  # Use chart version as app version
+        except KeyError:
+            pass
+
+    return description, app_version
+
+
 def create_helm_index(tgz_assets):
     index = {"apiVersion": "v1", "entries": {}}
     for asset in tgz_assets:
@@ -44,7 +65,10 @@ def create_helm_index(tgz_assets):
 
         response = requests.get(asset["download_url"])
         response.raise_for_status()
-        digest = hashlib.sha256(response.content).hexdigest()
+        tgz_content = response.content
+
+        digest = hashlib.sha256(tgz_content).hexdigest()
+        description, app_version = get_chart_details(tgz_content)
 
         if name not in index["entries"]:
             index["entries"][name] = []
@@ -57,6 +81,8 @@ def create_helm_index(tgz_assets):
                 "urls": [asset["download_url"]],
                 "created": asset["release_date"],
                 "digest": digest,
+                "description": description,
+                "appVersion": app_version,
             }
         )
 
